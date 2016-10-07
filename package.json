@@ -1,0 +1,22 @@
+{
+  "name": "web-emulator",
+  "version": "1.0.0",
+  "description": "A node module emulating the web navigation behavior.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KennyTangHK/web-emulator.git"
+  },
+  "dependencies": {
+
+  },
+  "author": "Kenny Tang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KennyTangHK/web-emulator/issues"
+  },
+  "homepage": "https://github.com/KennyTangHK/web-emulator#readme"
+}
