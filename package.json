@@ -15,7 +15,7 @@
     "request": "^2.75.0"
   },
   "author": "Kenny Tang",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/KennyTangHK/web-emulator/issues"
   },
