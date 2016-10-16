@@ -1,6 +1,6 @@
 {
   "name": "web-emulator",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A node module emulating the web navigation behavior.",
   "main": "index.js",
   "scripts": {
