@@ -2,7 +2,7 @@
   "name": "web-emulator",
   "version": "0.3.0",
   "description": "A node module emulating the web navigation behavior.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
