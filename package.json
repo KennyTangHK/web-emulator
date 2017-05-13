@@ -11,8 +11,8 @@
     "url": "git+https://github.com/KennyTangHK/web-emulator.git"
   },
   "dependencies": {
-    "debug": "^2.2.0",
-    "request": "^2.75.0"
+    "debug": "^2.6.6",
+    "request": "^2.81.0"
   },
   "author": "Kenny Tang",
   "license": "GPL-3.0",
