@@ -10,31 +10,36 @@ Installation
 Features
 --------
 
-* `GET` and `POST` to pages.
-* `GET` and `POST` to resources.
+* Emulate the http activities of page navigation.
+* Emulate the http activities of AJAX request.
 * Maintain cookie jar and `Referer` header (support redirect).
 * Support using custom cookie jar.
 * Emulate frames with the same cookie jar and a standalone `Referer` header.
 * Built with [`request`](https://www.npmjs.com/package/request).
 * Show debug message using [`debug`](https://www.npmjs.com/package/debug).
 
+Version 1.X
+-----------
+This version is a breaking upgrade to 0.X web-emulator.
+Please upgrade with caution.
+
 Usage
 -----
 
 ```javascript
-var WebEmulator = require('web-emulator');
+const WebEmulator = require('web-emulator');
 
 // Create emulator.
-var emulator = new WebEmulator();
+const emulator = new WebEmulator();
 
 // Go to https://httpbin.org/
-emulator.getTo('https://httpbin.org/')
+emulator.getTo('https://httpbin.org/?key=value')
     .then(function(response) {
-    	// Get resource https://httpbin.org/headers
-    	return emulator.getResource('https://httpbin.org/headers');
+        // Get resource https://httpbin.org/headers
+        return emulator.ajax('GET', 'https://httpbin.org/headers');
     })
     .then(function(response) {
-    	// response.body.headers.Referer === 'https://httpbin.org/'
+        // response.body.headers.Referer === 'https://httpbin.org/?key=value'
     });
 ```
 
