@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "debug": "^2.6.6",
+    "lodash.assignin": "^4.2.0",
     "request": "^2.81.0"
   },
   "author": "Kenny Tang",
