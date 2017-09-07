@@ -55,6 +55,7 @@ The `cookieJar` is useful for sharing cookies between multiple `webEmulator` or 
 - `cookieJar` `<CookieStore>` Defaults to `WebEmulator.jar()`.
 - `navigateHeaders` `<Object>` The headers being merged with the default page navigation headers.
 - `ajaxHeaders` `<Object>` The headers being merged with the default AJAX request headers.
+- `extraOptions` `<Object>` The options being passed to `request()`.
 
 Creates a new `WebEmulator` object with base referer URL and cookie store.
 This methods will **NOT** make request to the referer URL unless you call any navigation methods to it.
@@ -83,18 +84,6 @@ const DEFAULT_AJAX_HEADERS = {
 	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.1 Safari/603.1.30',
 	'X-Requested-With': 'XMLHttpRequest'
 };
-```
-
-To configure any headers, a `CookieStore` or a `undefined` must be passed to the cookieJar.
-
-```js
-new WebEmulator('http://google.com');
-new WebEmulator('http://google.com', WebEmulator.jar());
-new WebEmulator('http://google.com', undefined, {
-	'User-Agent': 'Your browser'
-}, {
-	'User-Agent': 'Your browser'
-});
 ```
 
 #### webEmulator.referer
@@ -264,6 +253,7 @@ Usage and Examples
 TODO
 ----
 
+- Unit test
 - Support `URL` object.
 - Support relative path.
 - Support raw body.
